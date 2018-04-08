@@ -61,8 +61,14 @@ public class EmployeeInfo {
 	 * So you probably need to send 2 arguments.
 	 * 
 	 */
-	public static int calculateEmployeeBonus(int numberOfYearsWithCompany){
-		int total=0;
+	public static double calculateEmployeeBonus(int salary, int performance){
+		double total=0;
+		if(performance >=8) {
+			total = salary * .1;
+		}else{
+			total = salary * .8;
+		}
+		System.out.println("Employee's bonus = " + total);
 		return total;
 	}
 	
@@ -72,8 +78,8 @@ public class EmployeeInfo {
 	 * Hints: pension will be 5% of the salary for 1 year, 10% for 2 years with the company and so on.
 	 * 
 	 */
-	public static int calculateEmployeePension(){
-		int total=0;
+	public static double calculateEmployeePension(int salary){
+		double total=0;
 		Scanner sc  = new Scanner(System.in);
 		System.out.println("Please enter start date in format (example: May,2015): ");
 		String joiningDate = sc.nextLine();
@@ -85,6 +91,20 @@ public class EmployeeInfo {
         //implement numbers of year from above two dates
 		//Calculate pension
 
+		String startYear = convertedJoiningDate.substring(convertedJoiningDate.length()-4);
+		String currentYear = convertedTodaysDate.substring(convertedTodaysDate.length()-4);
+
+		int start = Integer.parseInt(startYear);
+		int current = Integer.parseInt(currentYear);
+
+		if((current-start)==1) {
+			total = salary * .05;
+		}else if((current- start)<=2) {
+			total = salary * .1;
+		}else if((current-start)<=1)  {
+			}
+
+        System.out.println(total);
 		return total;
 	}
 	private static class DateConversion {
