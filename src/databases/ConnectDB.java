@@ -5,6 +5,8 @@ import com.mongodb.MongoClient;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
+import design.EmployeeInfo;
+import design.FortuneEmployee;
 import org.bson.Document;
 import parser.Student;
 
@@ -248,8 +250,8 @@ public class ConnectDB {
         try {
             connectToMySql();
                 ps = connect.prepareStatement("INSERT INTO "+tableName+" ( " + columnName1 + "," + columnName2 + " ) VALUES(?,?)");
-                ps.setString(1,"Ankita Sing");
-                ps.setInt(2,3590);
+                ps.setString(1,"Shubha Saha");
+                ps.setInt(2,3325);
                 ps.executeUpdate();
 
 
