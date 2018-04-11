@@ -15,7 +15,7 @@ public class PrimeNumber {
 		//define limit
 		int limit = 1000000;
 
-		System.out.println("Prime numbers between 2 and " + limit);
+		System.out.println("Prime numbers between 2 and " + limit + " are as follows:");
 
 		//loop through numbers 1 by 1
 		for (int i = 2; i < 1000000; i++) {

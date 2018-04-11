@@ -29,5 +29,23 @@ public class LowestNumber {
 		for (String st : lowestValue) {
 			System.out.println(st);
 		}
+
+
+	}
+
+	public static int LowestNum(int[] array) {
+		int a = array[0];
+		for (int i = 1; i < array.length; i++) {
+			if (array[i] < a) {
+				a = array[i];
+
+			}
+			System.out.println(i);
+		}
+		return a;
 	}
 }
+
+
+
+
