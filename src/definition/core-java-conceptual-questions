@@ -206,13 +206,23 @@ A. A framework provides functionalities/solution to the particular problem area.
 
 
 What are the testing Framework available in java?
-A.
+A. JUnit, TestNG, Mockito..etc.
 
 
 Difference between jUnit and testNG?
+A. Major difference in TestNG and JUnit test frameworks is their scope.
+
+
 What are the dependencies for this project?
+A. The dependencies are the external libraries and the lib folder.
+
+
 what is dependency injection in java?
+A. A framework class, usually called the dependency container, could analyze the dependencies of this class. With this analysis it is able to create an instance of the class and inject the objects into the defined dependencies using Java reflection.
+
+
 What is static binding and dynamic binding?
+A. Static binding in Java occurs during compile time while dynamic binding occurs during runtime. private , final and static methods and variables use static binding and are bonded by compiler while virtual methods are bonded during runtime based upon runtime object.
 
 
 
